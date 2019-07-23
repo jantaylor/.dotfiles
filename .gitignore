@@ -5,3 +5,4 @@ dump.rdb
 node_modules
 caches
 /options.sh
+/custom/*.sh

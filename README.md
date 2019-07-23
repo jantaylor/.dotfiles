@@ -57,6 +57,12 @@ cd ~ && git clone https://github.com/ksmithut/.dotfiles.git && .dotfiles/setup.s
 - `source/` All the files in here get run when you start a new shell, but this
   is really only sourced because of the `link/.zshrc` file.
 
+- `custom/` All the files in here belong to you and are custom for your machine.
+  They are sourced after the `source/*.sh` files, which means you can over-write any
+  configuration here. They will load in alphabhetical order, so name them something simple.
+  i.e. *00_zsh_custom_config.sh*, *10_developer_aliases.sh*, or *11_docker_env.sh*
+  *Note: This folder will be backed up by backup.sh however we are not responsible for lost configurations*
+
 - `backup.sh` A script to quickly backup your files.
 
 - `setup.sh` The script to run when setting up your system.

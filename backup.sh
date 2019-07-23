@@ -8,6 +8,7 @@ copy_dirs=(
   ~/.npmrc
   ~/.now
   ~/.bashrc.local
+  "$DOTFILES"/custom
   ~/Code
   ~/Documents
   ~/Pictures

@@ -1,0 +1,116 @@
+##############################################
+# Settings
+##############################################
+background yes
+use_xft yes
+xftfont Source Code Pro Medium:size=12 # 11
+xftalpha 1
+update_interval 999999
+total_run_times 0
+own_window yes
+own_window_class Conky
+own_window_transparent no
+own_window_type override
+own_window_colour 002b36
+##############################################
+# Compositing tips:
+# Conky can play strangely when used with
+# different compositors. I have found the
+# following to work well, but your mileage
+# may vary. Comment/uncomment to suit.
+##############################################
+## no compositor
+#own_window_type override
+#own_window_argb_visual no
+
+## xcompmgr
+#own_window_type override
+#own_window_argb_visual yes
+
+## cairo-compmgr
+#own_window_type desktop
+#own_window_argb_visual yes
+##############################################
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 200 200
+maximum_width 640
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color 93a1a1
+default_shade_color 073642
+default_outline_color ffffff
+alignment top_right
+gap_x 12
+gap_y 12
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale yes #for temp output with an A
+
+##############################################
+#  Output
+##############################################
+TEXT
+$alignr -- Basic Commands --
+Alt+Enter$alignr Launch Terminal
+Alt+Shift+Enter$alignr Launch Browser
+Alt+Space$alignr Run App Dialog
+Alt+Shift+Space$alignr Run Command Dialog
+Alt+Ctrl+Space$alignr Switch Window Dialog
+
+$alignr -- Move Through Workspaces --
+Alt+Shift+1$alignr Go to Workspace 1
+...
+Alt+Shift+9$alignr Go to Workspace 10
+Alt+Shift+Ctrl+1$alignr Go to Workspace 11
+...
+Alt+Shift+Ctrl+9$alignr Go to Workspace 19
+Alt+Shift+~$alignr Toggle Last Used Workspace
+Alt+Tab$alignr Next Workspace 1 -> 2
+Alt+Shift+Tab$alignr Previous Workspace 2 -> 1
+
+$alignr -- Layout/Resizing --
+Alt+Backspace$alignr Toggle Next Window
+$alignr Layout Orientation
+Alt+Shift+R$alignr Resize Window Mode
+$alignr Arrow Keys to Resize
+Escape$alignr Exit Resize Window Mode
+
+$alignr -- Move Active Window Through --
+Win+Shift+1$alignr Move Active Window to WS 1
+...
+Win+Shift+10$alignr Move Active Window to WS 10
+Win+Shift+Ctrl+1$alignr Move Active Window to WS 11
+...
+Win+Shift+Ctrl+0$alignr Move Active Window to WS 19
+Win+Shift+Tilde$alignr Move Active Window to Last Used Workspace
+
+$alignr -- Window Management --
+Alt+Shift+[↑]/[↓]/[←]/[→]$alignr Change Window Focus
+Alt+Shift+[I]/[K]/[J]/[L]$alignr Change Window Focus
+Win+Shift+[↑]/[↓]/[←]/[→]$alignr Move Window
+Win+Shift+[I]/[J]/[K]/[L]$alignr Move Window
+Alt+[+]/[-]$alignr Resize Window Gaps
+Alt+f / Alt+Ctrl+f$alignr Focused Window Fullscreen Toggle
+Alt+Shift+T$alignr Floating Window Mode Toggle
+
+$alignr -- Settings --
+Alt+c$alignr Control Center
+Alt+b$alignr Bluetooth Settings
+Alt+d$alignr Display Settings
+Alt+n$alignr Network Settings
+Alt+p$alignr Power Settings
+Alt+s$alignr Sound Settings
+Alt+w$alignr Wifi Settings
+
+$alignr -- Lock/Sleep --
+Alt+Ctrl+q / Alt+esc$alignr Lock Screen
+Alt+Shift+S$alignr Sleep
+Alt+E$alignr Logout
+
+$alignr -- Config --
+Win+Shift+C$alignr Reload i3config
+Alt+Shift+?$alignr Toggle This Window
