@@ -49,6 +49,9 @@ fi
 # =======================================
 if is_ubuntu; then
 
+  # Start x
+  alias startx="startx ~/.xinitrc"
+
   alias clipboard='xclip -selection clipboard'
 
   # upgrade/update shortcuts

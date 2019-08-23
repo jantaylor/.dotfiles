@@ -1,3 +1,9 @@
 # This is a non-symlinked bash profile that you can use to add non-shareable
 # shell initialization things like commands you use at your company, or other
 # things like that.
+
+alias ls='exa -F'
+alias l='exa -FGhl --git'
+alias ltree='exa -FThl --git'
+alias tree='exa -FT'
+alias rls='exa -FR'
